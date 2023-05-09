@@ -1,16 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import extraFunc as mineFunc
 
-
-fig2 = plt.figure()
+fig2 = plt.figure(figsize=(8,7))
 ax2 = fig2.add_subplot(111)
 
 #----SETTINGS----
-learningRate = 0.0000001
+learningRate = 0.001
 epoch = 1000 #how many Cycles
-maxVal = 50 #max value in range of inputs, also min value is -maxVal
-totalInputs = 10 #number or entries in dataset
+maxVal = 5 #max value in range of inputs, also min value is -maxVal
+totalInputs = 10000 #number or entries in dataset
 
 weights0 = np.random.random((3,2))
 weights1 = np.random.random((1,3))
@@ -102,5 +100,9 @@ for t in range(epoch):
     meanSquaredValues = np.append(meanSquaredValues, meanSquared) 
 
 ax2.plot(epochTime, meanSquaredValues, '.r')
+ax2.set_xlabel("Epoch\n(Number of iterations)")
+ax2.set_ylabel("Cost Value\n(How bad the network is)")
+dataString = "Final Cost Value: {}".format(meanSquaredValues[epoch - 1])
+ax2.text(0.50, 0.95, dataString, transform = ax2.transAxes)
 
 plt.show()
