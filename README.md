@@ -1,8 +1,7 @@
 # Simple-Neural-Network
 This repository contains the code for simulating a simple Neural Network
 
-![Scannable Document on May 9, 2023 at 10_56_03 AM](https://github.com/NovaBro/Simple-Neural-Network/assets/57100555/24118b31-e829-4947-9975-ff702baf451a)
-
+![Scannable Document on May 9, 2023 at 10_56_03 AM](https://github.com/NovaBro/Simple-Neural-Network/assets/57100555/dd6765fe-f00b-4420-b056-61367a898733)
 
 This neural network will attempt to simulate the function of Z prime.
 Z prime is the correct value, while Z is the output of the neural network.
