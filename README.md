@@ -11,3 +11,6 @@ A brief explanation of the neural network:
 In order to know how to adjust the weights and biases to lower the cost function C, we must take the partial derivative respect to each of the weights and biases. We then use a value for the learning rate multiplied by the partial derivative to move the weight values. We continue this process until the reached the time set initialy. 
 
 Keep in mind that the intial values set to the weights and biases are random. So each run of the program will give different results.
+
+The figure below is an example of the output of the code. 
+![Figure_1](https://github.com/NovaBro/Simple-Neural-Network/assets/57100555/9152ee6e-77a6-43fb-b332-a7c43b43ed2c)
